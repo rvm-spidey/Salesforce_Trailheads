@@ -1,0 +1,13 @@
+<template>
+    <lightning-card>
+      <div>
+        Hello {employee.fname} {employee.lname}
+      </div>
+      <p>Age: {employee.age}</p>
+      <p>City: {employee.city}</p>
+      <div>Rank = {getEmployeeRank}</div>
+      <h1>Hello, World</h1>
+      <!-- {getRandomNumber()} - LWC1060: Template expression doesn't allow CallExpression -->
+      <h1> Random number {getRandomNumber}</h1>
+    </lightning-card>
+</template>

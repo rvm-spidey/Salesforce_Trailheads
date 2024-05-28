@@ -1,0 +1,33 @@
+<template>
+  <lightning-card>
+    <div>counter: {counter}</div>
+    <div>
+      <lightning-button
+        label="+"
+        onclick={increment}
+      ></lightning-button>
+    </div>
+    <div>
+      <lightning-button
+        label="-"
+        onclick={decrement}
+      ></lightning-button>
+    </div>
+
+    <lightning-input
+      name="firstName"
+      label="First Name"
+      onchange={handleChange}
+    ></lightning-input>
+
+    <lightning-input
+        name="lastName"
+        label="Last Name"
+        onchange={handleChange}
+    ></lightning-input>
+    <p>
+        Uppercased Full Name: {uppercasedFullName}
+    </p>
+
+  </lightning-card>
+</template>

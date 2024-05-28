@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Wire decorator to call Apex Method and passing current account id">
+      <template if:true = {accounts.data}>
+        <template for:each= {accounts.data} for:item="acc" >
+          <div key= {acc.id} >
+            Name: {acc.Name}
+          </div>
+        </template>
+      </template>
+    </lightning-card>
+</template>

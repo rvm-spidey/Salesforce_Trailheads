@@ -1,0 +1,10 @@
+<template>
+  <lightning-card>
+    <h1>This is the child component</h1>
+    <p>{firstName} {lastName}</p>
+    <lightning-input label = "Enter first name" onchange= {handleChangeFirstName}></lightning-input>
+    <lightning-input label = "Enter last name" onchange= {handleChangeLastName}></lightning-input>
+
+    <lightning-button label="Click here" onclick= {handleClick}></lightning-button>
+  </lightning-card>
+</template>

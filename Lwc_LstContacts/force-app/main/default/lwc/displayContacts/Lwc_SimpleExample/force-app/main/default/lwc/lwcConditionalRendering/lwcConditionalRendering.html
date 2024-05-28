@@ -1,0 +1,14 @@
+<template>
+  <lightning-card>
+    <lightning-input type="checkbox" label="Show Details" onchange={statusChanged}></lightning-input>
+
+    <template lwc:if = {flag} >
+      we are in true block!
+    </template>
+
+    <template lwc:else>
+      We are in FALSE block !
+    </template>
+
+  </lightning-card>
+</template>

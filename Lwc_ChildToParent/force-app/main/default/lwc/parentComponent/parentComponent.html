@@ -1,0 +1,11 @@
+<template>
+    <lightning-card>
+      <h1>Parent component displaying the child component</h1>
+      <c-child-component ongetsearchevent = {handleEvent}></c-child-component>
+    </lightning-card>
+
+    <lightning-card>
+      <p>First Name: Name (retrieved from child component): {firstName}</p>
+      <p>Last Name: Name (retrieved from child component): {lastName}</p>
+    </lightning-card>
+</template>
