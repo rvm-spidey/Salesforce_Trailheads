@@ -19,6 +19,6 @@ export default class PublisherComponent extends LightningElement {
 
   handleClick(event) {
     let payload = { firstname: this.firstName, lastname: this.lastName};
-    publish(this.messageContext, ComrevoChannel, payload )
+    publish(this.messageContext, Comrevo, payload )
   }
 }
