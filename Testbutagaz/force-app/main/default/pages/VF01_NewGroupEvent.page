@@ -1,0 +1,17 @@
+<apex:page lightningStyleSheets="true" standardController="Contact" recordSetVar="contacts"  >
+    <apex:includeLightning />
+    <div  id="compContainer" />
+    <script>
+    console.log('tessst3');
+        $Lightning.use("c:newGroupEvent", function() {
+            $Lightning.createComponent(
+                "c:LC35_NewGroupEventTemp",
+                {},
+                "compContainer",
+                function(cmp) {
+                    console.log('Component is created!');
+                    console.log(cmp);
+                });
+            });
+      </script>
+</apex:page>
